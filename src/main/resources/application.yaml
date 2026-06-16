@@ -1,3 +1,20 @@
 spring:
   application:
     name: CreatorStore
+
+
+  # Database connection
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
+
+  # Hibernate ORM config
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
